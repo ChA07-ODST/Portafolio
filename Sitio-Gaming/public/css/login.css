@@ -1,0 +1,40 @@
+
+.container-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0a0a;
+}
+.login-box {
+    background: #151515;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #6d28d9;
+    box-shadow: 0 0 20px rgba(109, 40, 217, 0.3);
+    text-align: center;
+    width: 350px;
+}
+.text-neon { color: #fff; text-shadow: 0 0 10px #6d28d9; }
+.text-neon span { color: #6d28d9; }
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+.btn-neon {
+    background: #6d28d9;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-neon:hover { box-shadow: 0 0 20px #6d28d9; }

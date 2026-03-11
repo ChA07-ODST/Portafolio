@@ -397,6 +397,7 @@ body {
     color: #444;
 }
 
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .navbar { padding: 15px 20px; flex-direction: column; gap: 15px; }
@@ -404,4 +405,70 @@ body {
     .hero p { font-size: 1.1rem; }
     .navbar ul { gap: 15px; font-size: 0.8rem; }
     .info-container { gap: 40px; }
+}
+
+
+/* =========================================
+   SECCIÓN DE LOGIN (Basada en tus variables)
+   ========================================= */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Ajustado para que luzca bien entre header y footer */
+    padding: 60px 20px;
+}
+
+.login-card {
+    background-color: var(--fondo-surface);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 span {
+    color: var(--acento-violeta);
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* Estilo para los inputs */
+.login-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background: var(--fondo-black);
+    border: 1px solid #333;
+    color: var(--texto-white);
+    border-radius: 8px;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.login-card input:focus {
+    outline: none;
+    border-color: var(--acento-violeta);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Reutilizando tu lógica de botones */
+.btn-entrar {
+    width: 100%;
+    padding: 15px;
+    background: var(--acento-violeta);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn-entrar:hover {
+    box-shadow: 0 0 20px var(--acento-violeta);
+    transform: translateY(-3px);
 }

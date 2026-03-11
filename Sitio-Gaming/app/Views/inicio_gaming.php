@@ -7,6 +7,18 @@
 
 <?= $this->section('content') ?>
 
+<div style="background: rgba(255,0,0,0.1); color: #ff4444; padding: 15px; text-align: center;">
+    <?php if (isset($mensaje_db)): ?>
+        <p><strong>Estado:</strong> <?= $mensaje_db ?></p>
+    <?php endif; ?>
+
+    <?php if (isset($error_db)): ?>
+        <p><strong>Detalle del Error:</strong> <?= $error_db ?></p>
+    <?php else: ?>
+        <p style="color: #00ff00;">¡No hay errores detectados en el controlador!</p>
+    <?php endif; ?>
+</div>
+
     <section class="hero">
         <h1>BIENVENIDO A TU SITIO DE VIDEOJUEGOS FAVORITO</h1>
         <p>Tu centro de mando multiplataforma para Gears, trofeos de PlayStation y logros de Steam.</p>
@@ -55,6 +67,7 @@
 
     </div>
     </section>
+    
 
     </section> <div class="separator"></div>
 
